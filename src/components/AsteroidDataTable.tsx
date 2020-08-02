@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Table from 'react-bootstrap/Table';
 
-const Header: React.FC<{
+const AsteroidDataTable: React.FC<{
     asteroids: Array<{
         name: string,
         diameter: string,
         cad: string,
         relVel: string,
-        PHA: boolean,
+        orbitVal: string,
+        pha: boolean,
     }>
-}> = (asteroids) => {
+}> = ({ asteroids }) => {
 
     return <>
 
@@ -25,14 +26,16 @@ const Header: React.FC<{
                 </tr>
             </thead>
             <tbody>
-                asteroids.map(asteroid) = () =>{
+                {asteroids.map((asteroid) => (
                     <tr>
-                        <td>asteroid.name</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>{asteroid.name}</td>
+                        <td>{asteroid.diameter}</td>
+                        <td>{asteroid.cad}</td>
+                        <td>{asteroid.relVel}</td>
+                        <td>{asteroid.orbitVal}</td>
+                        <td>{asteroid.pha ? "Yes" : "No"}</td>
                     </tr>
-                }
+                ))}
             </tbody>
         </Table>
 
@@ -40,4 +43,4 @@ const Header: React.FC<{
     </>;
 };
 
-export default Header;
+export default AsteroidDataTable;

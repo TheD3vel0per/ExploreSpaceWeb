@@ -19,7 +19,7 @@ class AboutPage extends React.Component {
                           <div className="frontside">
                             <div className="card">
                               <div className="card-body text-center">
-                                <p><img className="img-fluid" src="/assets/images/headshots/devam.jpg" alt="card image" /></p>
+                                <p><img className="img-fluid" src="/assets/images/headshots/devam.jpg" alt="card" /></p>
                                 <h4 className="card-title">Devam Sisodraker</h4>
                                 <p className="card-text">I’m Devam, a second year Math & Computer Science student at UBC with a passion for software engineering.</p>
                               </div>
@@ -32,12 +32,12 @@ class AboutPage extends React.Component {
                                 <p className="card-text">Ever since I was a toddler, I have been passionate about technology. I want to make the world as passionate about technology as I am by showing people how to use it to solve problems.</p>
                                 <ul className="list-inline">
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/d3vel0per/">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/d3vel0per/">
                                       <i className="fa fa-linkedin" />
                                     </a>
                                   </li>
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="https://devam.io">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="https://devam.io">
                                       <i className="fa fa-external-link" />
                                     </a>
                                   </li>
@@ -56,7 +56,7 @@ class AboutPage extends React.Component {
                           <div className="frontside">
                             <div className="card">
                               <div className="card-body text-center">
-                                <p><img className=" img-fluid" src="/assets/images/headshots/vishal.jpg" alt="card image" /></p>
+                                <p><img className=" img-fluid" src="/assets/images/headshots/vishal.jpg" alt="card" /></p>
                                 <h4 className="card-title">Vishal Desh</h4>
                                 <p className="card-text">Hi, I am Vishal Desh currently pursuing Computer Science at UBC.</p>
                               </div>
@@ -69,12 +69,12 @@ class AboutPage extends React.Component {
                                 <p className="card-text">I am passionate about robotics and software development to create a positive impact in the world. I aspire to start my own robotics company. </p>
                                 <ul className="list-inline">
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="mailto: emailtovishy@gmail.com">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="mailto: emailtovishy@gmail.com">
                                       <i className="fa fa-google" />
                                     </a>
                                   </li>
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="http://vishaldesh.com/">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="http://vishaldesh.com/">
                                       <i className="fa fa-external-link" />
                                     </a>
                                   </li>
@@ -93,7 +93,7 @@ class AboutPage extends React.Component {
                           <div className="frontside">
                             <div className="card">
                               <div className="card-body text-center">
-                                <p><img className=" img-fluid" src="/assets/images/headshots/pedro.png" alt="card image" /></p>
+                                <p><img className=" img-fluid" src="/assets/images/headshots/pedro.png" alt="card" /></p>
                                 <h4 className="card-title">Pedro Machado</h4>
                                 <p className="card-text">University of British Columbia 2023</p>
                               </div>
@@ -106,12 +106,12 @@ class AboutPage extends React.Component {
                                 <p className="card-text">I am an University student who always had a good relationship with technology. In 2014 I wrote my first line of code, and now I have grown to understand complex topics and being able to produce advance web applications.</p>
                                 <ul className="list-inline">
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/pedro-machado-7606871aa/">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/pedro-machado-7606871aa/">
                                       <i className="fa fa-linkedin" />
                                     </a>
                                   </li>
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="https://machadopedro.com/">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="https://machadopedro.com/">
                                       <i className="fa fa-external-link" />
                                     </a>
                                   </li>
@@ -130,7 +130,7 @@ class AboutPage extends React.Component {
                           <div className="frontside">
                             <div className="card">
                               <div className="card-body text-center">
-                                <p><img className="img-fluid" src="/assets/images/headshots/aiden.jpg" alt="card image" /></p>
+                                <p><img className="img-fluid" src="/assets/images/headshots/aiden.jpg" alt="card" /></p>
                                 <h4 className="card-title">Aiden Kerr</h4>
                                 <p className="card-text">Hey, I'm Aiden! I'm a second year Computer Science student at UBC</p>
                               </div>
@@ -143,12 +143,12 @@ class AboutPage extends React.Component {
                                 <p className="card-text">I've been interested in technology and problem solving for as long as I can remember! Watching a project go from nothing to complete is always a joy.</p>
                                 <ul className="list-inline">
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/aidenkerr/">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/aidenkerr/">
                                       <i className="fa fa-linkedin" />
                                     </a>
                                   </li>
                                   <li className="list-inline-item">
-                                    <a className="social-icon text-xs-center" target="_blank" href="https://github.com/AidenKerr">
+                                    <a className="social-icon text-xs-center" target="_blank" rel="noopener noreferrer" href="https://github.com/AidenKerr">
                                       <i className="fa fa-external-link" />
                                     </a>
                                   </li>

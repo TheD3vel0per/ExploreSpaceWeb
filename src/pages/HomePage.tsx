@@ -1,8 +1,7 @@
 import React from 'react';
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBView, MDBIcon } from 'mdbreact';
+import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdbreact';
 import { Container, Button } from 'react-bootstrap';
-import { Subscription } from 'rxjs';
-import { Link, Redirect, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './HomePage.css';
 const HomePage: React.FC<{}> = () => {
     return (
@@ -11,29 +10,31 @@ const HomePage: React.FC<{}> = () => {
                 <Container>
                     <MDBRow className="card-z">
                         <MDBCol md='4' className="mb-4 d-flex" >
-                            <MDBCard className="card-z">
-                                <MDBCardImage
-                                    hover
-                                    overlay='white-light'
-                                    className='card-img-top'
-                                    src="/assets/images/ExploreSpace.png"
-                                    alt='Project image'
-                                />
+                                
+                                <MDBCard className="card-z">
+                                    
+                                    <MDBCardImage
+                                        hover
+                                        overlay='white-light'
+                                        className='card-img-top'
+                                        src="/assets/images/ExploreSpace.png"
+                                        alt='Project image'
+                                    />
 
-                                <MDBCardBody cascade className='text-center '>
-                                    <MDBCardTitle className='card-title'>
-                                        <strong>Game Simulation</strong>
-                                    </MDBCardTitle>
+                                    <MDBCardBody cascade className='text-center '>
+                                        <MDBCardTitle className='card-title'>
+                                            <strong>Game Simulation</strong>
+                                        </MDBCardTitle>
 
-                                    <MDBCardText>
-                                        <p className='blue-text'>This is a game for learning</p>
-                                    </MDBCardText>
+                                        <MDBCardText>
+                                            <p className='blue-text'>This is a game for learning</p>
+                                        </MDBCardText>
 
-                                    <Link to={'/project/'}>
-                                        <Button className="align-self-end btn-primary">Click to Go</Button>
-                                    </Link>
-                                </MDBCardBody>
-                            </MDBCard>
+                                        <a href="https://game.expl0re.space">
+                                            <Button className="align-self-end btn-primary">Click to Go</Button>
+                                        </a>
+                                    </MDBCardBody>
+                                </MDBCard>
                         </MDBCol>
                         <MDBCol md='4' className="mb-4 d-flex" >
                             <MDBCard className="card-z " >
