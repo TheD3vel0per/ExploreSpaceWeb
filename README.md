@@ -1,7 +1,7 @@
 # Expl0re.Space <img align="right" alt="Explore Space" src="./src/images/rocket.png">
 
 ## About This Project
-This project was made by our team during __To the Moon and Hack__ by MLH.  
+This project was made by our team during the __To the Moon and Hack__ hackathon by MLH.  
 
 Check out the Devpost [here](https://devpost.com/software/expl0re-space)  
 
