@@ -12,7 +12,7 @@ Check out the Devpost [here](https://devpost.com/software/expl0re-space)
 - Blender (3d modelling)
 - FireBase
 
-## Api's Used:
+## API's Used:
 - Google GeoLocation
 - Google Firebase
 - Open-notify ISS API
