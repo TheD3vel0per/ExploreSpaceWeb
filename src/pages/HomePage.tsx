@@ -3,9 +3,19 @@ import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, 
 import { Container, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
+import Typing from 'react-typing-animation';
+
 const HomePage: React.FC<{}> = () => {
     return (
         <>
+            <div className="jumbotron" id="laalu" >
+                <Typing>
+                    {/*<p id="heading-text">CERN WEB</p>*/}
+                    <h1 id="heading-text" className="neon"> Explore Space </h1>
+
+
+                </Typing>
+            </div>
             <div className="cardsBackground">
                 <Container>
                     <MDBRow className="card-z">
@@ -144,7 +154,34 @@ const HomePage: React.FC<{}> = () => {
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
-                        
+
+                        <MDBCol md='4' className="mb-4 d-flex" >
+                            <MDBCard className="card-z " >
+                                <MDBCardImage
+                                    hover
+                                    overlay='white-light'
+                                    className='card-img-top'
+                                    src="/assets/images/ISS.jpg"
+                                    alt='Project image'
+                                />
+
+                                <MDBCardBody cascade className='text-center '>
+                                    <MDBCardTitle className='card-title'>
+                                        <strong>Distance From ISS</strong>
+                                    </MDBCardTitle>
+
+                                    <MDBCardText>
+                                        <p className='blue-text'>Check how far you are from the ISS Constantly</p>
+                                    </MDBCardText>
+
+
+                                    <Link to={'/iss'}>
+                                        <Button className="align-self-end btn-primary">Click to go</Button>
+                                    </Link>
+                                </MDBCardBody>
+                            </MDBCard>
+                        </MDBCol>
+
                     </MDBRow>
 
                 </Container>

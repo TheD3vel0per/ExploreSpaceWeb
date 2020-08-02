@@ -1,11 +1,48 @@
 import React from "react";
+import { NavDropdown } from "react-bootstrap";
 import Nav from 'react-bootstrap/esm/Nav';
 import Navbar from 'react-bootstrap/esm/Navbar';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { authService } from '../service/AuthService';
+import * as firebase from 'firebase';
 
 const Header: React.FC<{}> = () => {
-    
+
+    const [user, setUser] = React.useState(null);
+
+    React.useEffect(() => {
+        firebase.auth().onAuthStateChanged(authState => {
+            setUser(authState);
+        });
+    }, []);
+
+    const signOut = () => {
+        authService.signOut();
+    };
+
+    const signIn = (provider: string) => {
+        switch (provider) {
+            case 'yahoo':
+                authService.signInWithYahoo();
+                break;
+            case 'twitter':
+                authService.signInWithTwitter();
+                break;
+            case 'github':
+                authService.signInWithGithub();
+                break;
+            case 'google':
+                authService.signInWithGoogle();
+                break;
+            case 'facebook':
+                authService.signInWithFacebook();
+                break;
+            default:
+                break;
+        }
+    };
+
     return <>
         <Navbar variant="dark" className="navbar navbar-inverse " >
             <Navbar.Brand>
@@ -27,9 +64,20 @@ const Header: React.FC<{}> = () => {
                         <span className="d-none d-sm-inline">About Us</span>
                     </Link>
                 </Nav.Link>
-
-
             </Nav>
+
+            {user ? <>
+                <span className="pp"> {user.displayName} </span>
+                <Nav.Link className="LogoutButton" onClick={() => signOut()}>Log Out</Nav.Link>
+            </> : 
+                <NavDropdown title="Sign in with" id="basic-nav-dropdown">
+                    <NavDropdown.Item onClick={() => signIn('yahoo')}>Yahoo</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => signIn('twitter')}>Twitter</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => signIn('github')}>Github</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => signIn('google')}>Google</NavDropdown.Item>
+                    <NavDropdown.Item onClick={() => signIn('facebook')}>Facebook</NavDropdown.Item>
+                </NavDropdown>
+            }
         </Navbar>
     </>;
 };

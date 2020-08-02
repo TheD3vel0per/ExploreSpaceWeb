@@ -37,22 +37,29 @@ font-size: 100px;}
 
  
     
-  .neon {
-      padding-top: 5%;
-      font-size: 4em;
-      font-weight: 450;
-      text-align: center;
-      color: #fff;
-      text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 20px #fff,
-      0 0 40px rgb(0, 255, 234),
-      0 0 80px rgb(0, 255, 234),
-      0 0 90px rgb(0, 255, 234),
-      0 0 100px rgb(0, 255, 234),
-      0 0 150px rgb(0, 255, 234);
-  } 
+  .jumbotron{
+    background-color: #000000!important;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    
+}
+
+
+.neon {
+    padding-top: 5%;
+    font-size: 4em;
+    font-weight: 450;
+    text-align: center;
+    color: #fff;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(0, 255, 234),
+    0 0 80px rgb(0, 255, 234),
+    0 0 90px rgb(0, 255, 234),
+    0 0 100px rgb(0, 255, 234),
+    0 0 150px rgb(0, 255, 234);
+} 
 
 
 
@@ -110,15 +117,7 @@ font-size: 100px;}
     width: 100px;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: black;
-  }
+
 
 
   
