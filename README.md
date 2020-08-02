@@ -1,4 +1,4 @@
-# Explore Space <img align="right" alt="Explore Space" src="./src/images/rocket.png">
+# Expl0re.Space <img align="right" alt="Explore Space" src="./src/images/rocket.png">
 
 ## About This Project
 This project was made by our team during __To the Moon and Hack__ by MLH.  
