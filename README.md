@@ -23,7 +23,7 @@ Check out the Devpost [here](https://devpost.com/software/expl0re-space)
 
 ## License
 ```
-Copyright (C) 2020 Explore Space Team
+Copyright (C) 2020 Expl0re.Space Team
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
