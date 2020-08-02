@@ -1,0 +1,30 @@
+.asteroidContainer {
+    width: 100%;
+    height: calc(100vh - 60px);
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.asteroidContainer h1 {
+    text-align: center;
+}
+
+.dateInput {
+
+    margin-top: 20px;
+    width: 160px;
+
+
+}
+
+.asteroidData {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 80%;
+    margin-bottom: 50px;
+}

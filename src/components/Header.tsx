@@ -4,13 +4,12 @@ import FormGroup from 'react-bootstrap/esm/FormGroup';
 import Nav from 'react-bootstrap/esm/Nav';
 import Navbar from 'react-bootstrap/esm/Navbar';
 import { Link } from 'react-router-dom';
-
 import './Header.css';
 
 const Header: React.FC<{}> = () => {
     
     return <>
-        <Navbar variant="dark" className="navbar navbar-inverse " fixed="top">
+        <Navbar variant="dark" className="navbar navbar-inverse " >
             <Navbar.Brand>
                 <img src="/images/ExploreSpace.png" alt="" width={65} height={65} />
             </Navbar.Brand>

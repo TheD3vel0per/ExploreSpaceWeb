@@ -8,8 +8,11 @@ import {
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import GamePage  from './pages/GamePage';
+import AsteroidPage from './pages/AsteroidPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'mdbreact/dist/css/mdb.css';
 import './App.css';
 
 const App: React.FC<{}>  = () => {
@@ -17,8 +20,10 @@ const App: React.FC<{}>  = () => {
     <BrowserRouter>
       <Header/>
       <Switch>
-        <Route path='/' component={HomePage}></Route>
         <Route path='/about-us' component={AboutPage}></Route>
+        <Route path='/game' component={GamePage}></Route>
+        <Route path='/asteroids' component={AsteroidPage}></Route>
+        <Route path='/' component={HomePage}></Route>
       </Switch>
     </BrowserRouter>
   );
