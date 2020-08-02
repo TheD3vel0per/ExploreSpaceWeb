@@ -41,7 +41,7 @@ const HomePage: React.FC<{}> = () => {
                                     </MDBCardText>
 
                                     <a href="https://game.expl0re.space">
-                                        <Button className="align-self-end btn-primary">Click to Go</Button>
+                                        <Button className="align-self-end btn-primary" id="btn">Click to Go</Button>
                                     </a>
                                 </MDBCardBody>
                             </MDBCard>
@@ -68,7 +68,7 @@ const HomePage: React.FC<{}> = () => {
 
 
                                     <Link to={'/roadster/'}>
-                                        <Button className="align-self-end btn-primary">Click to go</Button>
+                                        <Button className="align-self-end btn-primary" id="btn">Click to go</Button>
                                     </Link>
                                 </MDBCardBody>
                             </MDBCard>
@@ -95,7 +95,7 @@ const HomePage: React.FC<{}> = () => {
 
 
                                     <Link to={'/asteroids'}>
-                                        <Button className="align-self-end btn-primary">Click to Go</Button>
+                                        <Button className="align-self-end btn-primary" id="btn">Click to Go</Button>
                                     </Link>
                                 </MDBCardBody>
                             </MDBCard>
@@ -113,16 +113,16 @@ const HomePage: React.FC<{}> = () => {
 
                                 <MDBCardBody cascade className='text-center '>
                                     <MDBCardTitle className='card-title'>
-                                        <strong>Orbital Data</strong>
+                                        <strong>Three Body Orbit</strong>
                                     </MDBCardTitle>
 
                                     <MDBCardText>
-                                        <p className='blue-text'>Get data for Orbitals</p>
+                                        <p className='blue-text'>Three planets beautifully orbit eachother in a figure-eight path. Simply Amazing.</p>
                                     </MDBCardText>
 
 
-                                    <Link to={'/project/'}>
-                                        <Button className="align-self-end btn-primary">Click to go</Button>
+                                    <Link to={'/3bp/'}>
+                                        <Button className="align-self-end btn-primary" id="btn">Click to go</Button>
                                     </Link>
                                 </MDBCardBody>
                             </MDBCard>
@@ -149,7 +149,7 @@ const HomePage: React.FC<{}> = () => {
 
 
                                     <Link to={'/mars/'}>
-                                        <Button className="align-self-end btn-primary">Click to go</Button>
+                                        <Button className="align-self-end btn-primary" id="btn">Click to go</Button>
                                     </Link>
                                 </MDBCardBody>
                             </MDBCard>
@@ -176,7 +176,7 @@ const HomePage: React.FC<{}> = () => {
 
 
                                     <Link to={'/iss'}>
-                                        <Button className="align-self-end btn-primary">Click to go</Button>
+                                        <Button className="align-self-end btn-primary" id="btn">Click to go</Button>
                                     </Link>
                                 </MDBCardBody>
                             </MDBCard>

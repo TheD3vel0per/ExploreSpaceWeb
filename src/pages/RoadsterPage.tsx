@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Table } from 'react-bootstrap';
 import RoadsterFetcher from '../fetchers/RoadsterFetcher';
+import './roadster.css'
 
 const RoadsterPage: React.FC<{}> = () => {
 
@@ -41,7 +42,7 @@ const RoadsterPage: React.FC<{}> = () => {
 
     return (
         <Container>
-            <img src="assets/images/Roadster.jpg"/>
+            <img className="roadster" src="/assets/images/Roadster.jpg"/>
             <Table striped bordered hover>
                 <tbody>
                     <tr>

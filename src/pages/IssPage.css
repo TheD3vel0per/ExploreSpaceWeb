@@ -1,9 +1,18 @@
+.issPageContainer h1 {
+    font-size: 35px;
+    margin-top: 30px;
+    text-align: center;
+}
+
 .issContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
 
 }
 .row {
@@ -25,5 +34,5 @@
 }
 
 .result {
-    margin-top: 100px;
+    margin-top: 60px;
 }

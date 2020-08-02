@@ -28,7 +28,6 @@ const IssPage: React.FC = () => {
             setIssCoords({ latitude: val.data['iss_position'].latitude, longitude: val.data['iss_position'].longitude });
         }).then(() => {
 
-            console.log(calculateDistance(yourCoords.longitude, yourCoords.latitude, issCoords.longitude, issCoords.latitude))
             setDistance(calculateDistance(yourCoords.longitude, yourCoords.latitude, issCoords.longitude, issCoords.latitude));
             setLoaded(true);
         })
@@ -37,7 +36,6 @@ const IssPage: React.FC = () => {
 
 
     const loadRecommended = (tags) => {
-        console.log('load recommended');
         fetch('/api/projects/recommended', {
             method: 'POST',
             headers: {
@@ -57,8 +55,6 @@ const IssPage: React.FC = () => {
 
     const load = () => {
         navigator.geolocation.getCurrentPosition((position) => {
-            console.log("Latitude is :", position.coords.latitude);
-            console.log("Longitude is :", position.coords.longitude);
             setYourCoords({
                 latitude: position.coords.latitude,
                 longitude: position.coords.longitude,
@@ -89,34 +85,40 @@ const IssPage: React.FC = () => {
 
     return (
         <>
-            <Container>
+            <Container className="issPageContainer">
                 <h1> This is How Close You Are to the ISS (International Space Station)</h1>
-
-
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}>
+                    <img src="/assets/images/ISS2.png" className="center" />
+                </div>
                 <div className="issContainer">
 
                     {loaded ? (
                         <>
                             <div className="row">
                                 <div className="issCoordinates">
-                                    <h2>ISS Coordinates</h2>
+                                    <h2>ISS Coordinates:</h2>
 
-                                    <h2>{(issCoords.latitude).toFixed(4)}</h2>
-                                    <h3>{(issCoords.longitude).toFixed(4)}</h3>
+                                    <h3>{Number(issCoords.latitude).toFixed(4)}</h3>
+                                    <h3>{Number(issCoords.longitude).toFixed(4)}</h3>
                                 </div>
 
                                 <div className="yourCoordinates">
-                                    <h2>Your Coordinates</h2>
-                                    <h2>{(yourCoords.latitude).toFixed(4)}</h2>
-                                    <h3>{(yourCoords.longitude).toFixed(4)}</h3>
+                                    <h2>Your Coordinates:</h2>
+                                    <h3>{Number(yourCoords.latitude).toFixed(4)}</h3>
+                                    <h3>{Number(yourCoords.longitude).toFixed(4)}</h3>
                                 </div>
 
                             </div>
 
                             <div>
                                 <div className="result">
-                                    <h1> Distance</h1>
-                                    <h2>{distance.toFixed(4)}</h2>
+                                    <h2> Distance:</h2>
+                                    <h3>{distance.toFixed(4)}</h3>
                                 </div>
                             </div>
 

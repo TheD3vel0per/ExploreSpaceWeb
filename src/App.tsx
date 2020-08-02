@@ -14,6 +14,7 @@ import AsteroidPage from './pages/AsteroidPage';
 import ThreeBodyProblemPage from './pages/ThreeBodyProblemPage';
 import MarsImagePage from './pages/MarsImagePage'
 import RoadsterPage from './pages/RoadsterPage';
+import PrivacyPage from './pages/PrivacyPage';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +33,7 @@ const App: React.FC<{}>  = () => {
         <Route path='/asteroids' component={AsteroidPage}></Route>
         <Route path='/mars' component={MarsImagePage}></Route> 
         <Route path='/iss' component={IssPage}></Route>
+        <Route path='/privacy' component={PrivacyPage}></Route>
         <Route path='/' component={HomePage}></Route>
 
       </Switch>

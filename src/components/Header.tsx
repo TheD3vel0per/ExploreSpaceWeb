@@ -7,6 +7,8 @@ import './Header.css';
 import { authService } from '../service/AuthService';
 import * as firebase from 'firebase';
 
+import Logo from '../images/rocket.png'
+
 const Header: React.FC<{}> = () => {
 
     const [user, setUser] = React.useState(null);
@@ -46,7 +48,7 @@ const Header: React.FC<{}> = () => {
     return <>
         <Navbar variant="dark" className="navbar navbar-inverse " >
             <Navbar.Brand>
-                <img src="/images/ExploreSpace.png" alt="" width={65} height={65} />
+                <img src={Logo} alt="" width={42} height={60} />
             </Navbar.Brand>
             <Navbar.Toggle />
             <Nav className="mr-auto">
@@ -62,6 +64,12 @@ const Header: React.FC<{}> = () => {
                     <Link to="/about-us" id="link">
                         {/* <i className="fa fa-address-book-o fa-2x"></i> */}
                         <span className="d-none d-sm-inline">About Us</span>
+                    </Link>
+                </Nav.Link>
+                <Nav.Link className="btn1">
+                    <Link to="/privacy" id="link">
+                        {/* <i className="fa fa-address-book-o fa-2x"></i> */}
+                        <span className="d-none d-sm-inline">Privacy Policy</span>
                     </Link>
                 </Nav.Link>
             </Nav>
