@@ -27,4 +27,6 @@
     border-radius: 10px;
     height: 80%;
     margin-bottom: 50px;
+    overflow: hidden;
+    overflow: scroll;
 }

@@ -11,6 +11,8 @@ import AboutPage from './pages/AboutPage';
 import GamePage  from './pages/GamePage';
 import AsteroidPage from './pages/AsteroidPage';
 import ThreeBodyProblemPage from './pages/ThreeBodyProblemPage';
+import MarsImagePage from './pages/MarsImagePage'
+import RoadsterPage from './pages/RoadsterPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'mdbreact/dist/css/mdb.css';
@@ -22,10 +24,14 @@ const App: React.FC<{}>  = () => {
       <Header/>
       <Switch>
         <Route path='/about-us' component={AboutPage}></Route>
+        <Route path='/roadster' component={RoadsterPage}></Route>
         <Route path='/3bp' component={ThreeBodyProblemPage}></Route>
         <Route path='/game' component={GamePage}></Route>
         <Route path='/asteroids' component={AsteroidPage}></Route>
+        <Route path='/mars' component={MarsImagePage}></Route>
         <Route path='/' component={HomePage}></Route>
+        <Route path='/' component={IssPage}></Route>
+
       </Switch>
     </BrowserRouter>
   );

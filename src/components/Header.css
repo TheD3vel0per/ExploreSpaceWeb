@@ -85,6 +85,15 @@ text-decoration:none;
   text-decoration:none; 
 }
 
+.d-none.d-sm-inline.nounderline, .d-none.d-sm-inline {
+  font-size: 25px;
+  color: white;
+}
+
+#link:hover {
+  text-decoration: none;
+
+}
 
 .btn1:hover {
   text-decoration:none; 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Table from 'react-bootstrap/Table';
-import ImageGallery from 'react-image-gallery';
-
+import { Container, Carousel } from 'react-bootstrap';
+import './ImageDataDisplay.css';
 
 const ImageDataDisplay: React.FC<{
     Images: Array<{
@@ -12,7 +12,20 @@ const ImageDataDisplay: React.FC<{
 }> = ({ Images }) => {
 
     return <>
-        <ImageGallery items={Images} />
+
+        <Container id="carouselContainer">
+            <Carousel id="carousel">
+                {Images.map((image) => (
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={image.original}
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
+                ))}
+            </Carousel>
+        </Container>
     </>;
 };
 

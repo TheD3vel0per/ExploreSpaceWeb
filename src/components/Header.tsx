@@ -14,15 +14,16 @@ const Header: React.FC<{}> = () => {
             <Navbar.Toggle />
             <Nav className="mr-auto">
                 <Nav.Link className="btn1">
-                    <Link to="/">
+                    <Link to="/" id="link">
                         <div className="nounderline">
-                            <i className="fa fa-home fa-2x"></i>
+                            {/* <i className="fa fa-home fa-2x"></i> */}
                             <span className="btn1 d-none d-sm-inline nounderline">Home</span>
                         </div>
                     </Link>
                 </Nav.Link>
                 <Nav.Link className="btn1">
-                    <Link to="/about-us"><i className="fa fa-address-book-o fa-2x"></i>
+                    <Link to="/about-us" id="link">
+                        {/* <i className="fa fa-address-book-o fa-2x"></i> */}
                         <span className="d-none d-sm-inline">About Us</span>
                     </Link>
                 </Nav.Link>

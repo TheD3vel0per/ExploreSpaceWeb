@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+window['nasa-key'] = 'uDlJcGyHbQU7sBUj4wNMIE4gxxOi9cvyYWLtS6QD';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -17,12 +17,12 @@ const AsteroidDataTable: React.FC<{
         <Table striped bordered hover>
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Diameter</th>
-                    <th>Close Approach Date</th>
-                    <th>Relative Velocity</th>
+                    <th>Name </th>
+                    <th>"Diameter (miles)"</th>
+                    <th>"Close Approach Date (YYYY-MM-DD)"</th>
+                    <th>"Relative Velocity (miles_per_hour)"</th>
                     <th>Orbiting Body</th>
-                    <th>"Potentially Hazardous Asteroid (True/False)"</th>
+                    <th>"Potentially Hazardous Asteroid"</th>
                 </tr>
             </thead>
             <tbody>
